@@ -1,0 +1,171 @@
+rs-module-wrap {
+    visibility: hidden
+}
+
+rs-module-wrap,
+rs-module-wrap * {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+rs-module-wrap {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: block
+}
+
+rs-module {
+    position: relative;
+    overflow: hidden;
+    display: block
+}
+
+rs-sbg-px,
+rs-sbg-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: block
+}
+
+a.rs-layer,
+a.rs-layer:-webkit-any-link {
+    text-decoration: none
+}
+
+rs-module a {
+    box-shadow: none
+}
+
+rs-module img {
+    max-width: none !important;
+    transition: none;
+    margin: 0;
+    padding: 0;
+    border: none
+}
+
+rs-slides,
+rs-slide,
+rs-slide:before {
+    position: absolute;
+    text-indent: 0em;
+    top: 0;
+    left: 0
+}
+
+rs-slide,
+rs-slide:before {
+    display: block;
+    visibility: hidden
+}
+
+rs-module rs-layer,
+rs-module .rs-layer {
+    opacity: 0;
+    position: relative;
+    visibility: hidden;
+    white-space: nowrap;
+    display: block;
+    -webkit-font-smoothing: antialiased !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-osx-font-smoothing: grayscale;
+    z-index: 1
+}
+
+rs-module-wrap,
+rs-module .rs-layer,
+rs-module img {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none
+}
+
+.rs-layer img,
+rs-layer img {
+    vertical-align: top
+}
+
+rs-module h1.rs-layer,
+rs-module div.rs-layer,
+rs-module span.rs-layer,
+rs-module p.rs-layer {
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0
+}
+
+rs-module h1.rs-layer:before {
+    content: none
+}
+
+.rev-btn,
+.rev-btn:visited {
+    outline: none !important;
+    box-shadow: none;
+    text-decoration: none !important;
+    box-sizing: border-box;
+    cursor: pointer
+}
+
+.rev-btn i {
+    font-size: inherit;
+    font-weight: 400;
+    position: relative;
+    top: 0;
+    transition: opacity .2s ease-out, margin .2s ease-out;
+    margin-left: 0;
+    line-height: inherit
+}
+
+.rs-layer img {
+    background: 0 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF)
+}
+
+a.rs-layer {
+    transition: none
+}
+
+rs-bullet,
+rs-bullets {
+    display: block
+}
+
+.tp-bullets.navbar {
+    border: none;
+    min-height: 0;
+    margin: 0;
+    border-radius: 0
+}
+
+.tp-bullets {
+    position: absolute;
+    display: block;
+    z-index: 1000;
+    top: 0;
+    left: 0
+}
+
+.tp-bullet {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: #fff;
+    background: rgba(255, 255, 255, .3);
+    cursor: pointer
+}
+
+.tp-bullet.selected,
+.tp-bullet:hover {
+    background: #fff
+}

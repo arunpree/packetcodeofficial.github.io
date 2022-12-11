@@ -1,0 +1,372 @@
+/* General */
+body {
+  background-color: #f5f5f5;
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+}
+
+a {
+  color: #121212;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #bb0c0c;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #bb0c0c;
+  border-color: #bb0c0c;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #9a0a0a;
+  border-color: #9a0a0a;
+}
+
+@font-face {
+  font-family: Beyond the Mountains;
+  src: url('../fonts/beyond_the_mountains.otf');
+}
+
+.row.gutter-16 {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.row.gutter-16 [class*='col-']:not(:first-child),
+.row.gutter-16 [class*='col-']:not(:last-child) {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 0;
+    z-index: 1;
+}
+
+header:after {
+    content: '';
+    height: 10px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    background: url('../img/triangle_bg_black.png.png') repeat-x;
+    background-size: 26px 10px;
+    opacity: .6;
+}
+
+header .navbar-brand {
+  padding: 0;
+}
+
+.navbar-brand img {
+  width: 150px;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: 15px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .active>.nav-link {
+  color: #fbc655;
+}
+
+.btn-order-online {
+  padding: 15px 20px;
+  font-size: 14px;
+  float: right;
+  margin-top: 18px;
+}
+
+/* Main Carousel */
+.carousel-caption {
+  text-align: center;
+  top: 60%;
+  bottom: 0;
+  transform: translateY(-60%);
+}
+
+.carousel-caption h5 {
+  color: yellow;
+  letter-spacing: -1px;
+}
+
+.carousel-caption h5>span {
+  font-size: 48px;
+}
+
+.carousel-caption h3 {
+  font-family: "Beyond the Mountains", sans-serif;
+  font-size: 108px;
+}
+
+.carousel-caption .btn-order-online {
+  float: none;
+}
+
+/* Sections General */
+.section {
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: "Beyond the Mountains", sans-serif;
+}
+
+.product-col {
+  background-color: #fff;
+  margin-bottom: 16px;
+}
+
+.product-col img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-col>h5 {
+  font-size: 18px;
+}
+
+.product-col>p {
+  font-size: 12px;
+}
+
+.btn-brdr-primary {
+    border: 1px solid #bb0c0c;
+    color: #bb0c0c;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 12px 15px;
+}
+
+.section-title h3 {
+    font-size: 46px;
+}
+
+.section-title h3 span {
+  color: #bb0c0c;
+}
+
+.section-title p {
+  margin: 15px auto 0 auto;
+  font-weight: 600;
+}
+
+/* About */
+.inner-banner {
+  position: relative;
+}
+
+.inner-banner h3 {
+    text-align: center;
+    font-size: 36px;
+    font-family: "Beyond the Mountains", sans-serif;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+}
+
+.about-col>p {
+  font-size: 14px;
+}
+
+.testimonial-col h4 {
+  font-size: 18px;
+}
+
+.testimonial-col p {
+  color: #777;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.testimonial-col h6 {
+  color: #bb0c0c;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Services */
+.menu_list li {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.menu_list li h4 {
+    color: #222222;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.menu_list li h4 span {
+    float: right;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+.menu_list li p {
+    margin-bottom: 0px;
+}
+
+.book_table_form .form-group input,
+.book_table_form .form-group select,
+.book_table_form .form-group textarea {
+    border-radius: 0px;
+    border: 1px solid #eeeeee;
+    height: 40px;
+    padding: 0px 20px;
+    font-size: 13px;
+    color: #565656;
+    outline: none;
+    box-shadow: none;
+}
+
+.book_table_form .form-group textarea {
+  height: 120px;
+}
+
+.book_table_form .form-group .btn {
+  float: none;
+}
+
+/* Footer */
+footer {
+  background: #121212;
+  color: #fff;
+  font-size: 14px;
+  padding: 30px 0;
+}
+
+footer .logo {
+  width: 120px;
+}
+
+.footer-col {
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  line-height: 21px;
+  margin-bottom: 0;
+  color: #aaa;
+}
+
+footer a {
+  color: #aaa;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer .social-links a {
+  margin-right: 10px;
+}
+
+footer .footer-links {
+  margin-bottom: 30px;
+}
+
+footer .footer-links h4 {
+  font-size: 16px;
+}
+
+footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+}
+
+footer .footer-links ul li {
+  padding-bottom: 15px;
+}
+
+footer .footer-links ul li:last-child {
+  padding-bottom: 0;
+}
+
+footer .copyright {
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 575px) {
+  header {
+    background-color: transparent;
+    position: static;
+  }
+  .navbar-brand img {
+    width: 80px;
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    color: #121212;
+    
+  }
+
+  header .btn-order-online,
+  header:after {
+    display: none;
+  }
+
+  .carousel-caption {
+    top: 40%;
+  }
+
+  .carousel-caption h5,
+  .carousel-caption h5 span {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+
+  .carousel-caption h3 {
+    font-size: 34px;
+  }
+
+  .carousel-caption .btn-order-online {
+    padding: 10px 14px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .section-title h3 {
+    font-size: 32px;
+  }
+
+  .inner-banner h3 {
+    font-size: 24px;
+    top: 25%;
+  }
+
+  .book_table_form {
+    margin-top: 40px;
+  }
+}
